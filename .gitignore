@@ -26,3 +26,9 @@
 *.exe
 *.out
 *.app
+
+#MSVC
+Release
+Debug
+*.vcxproj
+*.filters
