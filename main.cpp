@@ -326,7 +326,7 @@ int LDecimalToString(lua_State *L)
 	return 1;
 }
 
-extern "C" int __declspec(dllexport) __cdecl luaopen_lua_5_3_winapi(lua_State *L)
+extern "C" int __declspec(dllexport) __cdecl luaopen_cwinlua(lua_State *L)
 {
 	lua_pushglobal(L);
 
