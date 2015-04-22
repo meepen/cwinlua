@@ -1,0 +1,82 @@
+MODULEENTRY32
+{
+	int32 structsize
+	int32 moduleid
+	int32 processid
+	int32 glblcntusage
+	int32 proccntusage
+	ptr base
+	int32 size
+	ptr module
+	char[256] name
+	char[260] exe
+}
+
+THREADENTRY32
+{
+	int32 size
+	int32 usagecount
+	int32 threadid
+	int32 processid
+	int32 basepri
+	int32 deltapri
+	int32 flags
+}
+
+PROCESSENTRY32
+{
+	int32 structsize
+	int32 cntusage
+	int32 processid
+	ptr defaultheapid
+	int32 moduleid
+	int32 threadcount
+	int32 parentpid
+	int32 classbase
+	int32 flags
+	char[260] exe
+}
+
+CONTEXT
+{
+	int32 ContextFlags
+
+    int32   Dr0
+    int32   Dr1
+    int32   Dr2
+    int32   Dr3
+    int32   Dr6
+    int32   Dr7
+	
+    int32   ControlWord
+    int32   StatusWord
+    int32   TagWord
+    int32   ErrorOffset
+    int32   ErrorSelector
+    int32   DataOffset
+    int32   DataSelector
+    char[80] RegisterArea
+    int32   Spare0
+	
+    int32   SegGs
+    int32   SegFs
+    int32   SegEs
+    int32   SegDs
+
+    int32   Edi
+    int32   Esi
+    int32   Ebx
+    int32   Edx
+    int32   Ecx
+    int32   Eax
+
+    int32   Ebp
+    int32   Eip
+    int32   SegCs
+    int32   EFlags
+    int32   Esp
+    int32   SegSs
+	
+	char[512] shit
+	
+}
